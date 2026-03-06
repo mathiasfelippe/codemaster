@@ -14,10 +14,16 @@ O menu mobile, links, formulário com API, animação do carrossel, modo escuro/
 
 ## Lista de tarefas 📝
 [] 1. Menu mobile
-[] 2. Links Ativos
-[] 3. Formulário com API
-[] 4. Animação de Scroll
-[] 5. Modo escuro/claro
+[] 2. Navegação ativa
+[] 3. Modo escuro/claro
+[] 4. Animação do título
+[] 5. Animação da seção Home
+[] 6. Animação das seções
+[] 7. Botão de voltar ao topo
+[] 8. Carrossel de projetos
+[] 9. Formulário de contato
+[] 10. Atuação da seção "Sobre"
+
 
 
 ## 🛠 Tecnologias Utilizadas
