@@ -64,8 +64,8 @@ if (savedTheme) {
 }
 
 // ========================= ANIMAÇÃO DO TÍTULO ====================
-// Seleciona o elemento fo título e define variáveis para a animação
-const titleElement = document.querySelector('name');
+// Seleciona o elemento do título e define variáveis para a animação
+const titleElement = document.querySelector('#name');
 const text = "CODEMASTER";
 let index = 0;
 let isTyping = true;
@@ -103,4 +103,16 @@ function updateTextColor() {
 // Inicia a animação do título ao carregar a página
 document.addEventListener('DOMContentLoaded', animateText);
 updateTextColor();
+
+// ========================= ANIMAÇÃO DA SEÇÃO HOME ====================
+// Seleciona a seção home e aplica uma animação de fade-in
+const homeSection = document.querySelector('#home');
+homeSection.style.opacity = '0';
+homeSection.style.transform = 'translateY(20px)';
+homeSection.style.transition = 'opacity 1s ease, transform 1s ease';
+
+setTimeout(() => {
+    homeSection.style.opacity = '1';
+    homeSection.style.transform = 'translateY(0)';
+}, 100);
 
