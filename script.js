@@ -1,11 +1,11 @@
 // 1ª Digitação (JS Completo)
 
 // ========================= CONTROLE DO MENU MOBILE ====================
-const menuIconn = document.querySelector('#menu-icon');
+const menuIcon = document.querySelector('#menu-icon');
 const navList = document.querySelector('.navlist');
 
-menuIconn.addEventListener('click', () => {
-    menuIconn.classList.toggle('bx-x');
+menuIcon.addEventListener('click', () => {
+    menuIcon.classList.toggle('bx-x');
     navList.classList.toggle('open');
 
 // Bloquear scroll quando menu aberto
@@ -15,7 +15,7 @@ document.body.style.overflow = navList.classList.contains('open') ? 'hidden' : '
 // Fechar menu ao clicar em links 
 document.querySelectorAll('.navlist a').forEach(link => {
     link.addEventListener('click', () => {
-        menuIconn.classList.remove('bx-x');
+        menuIcon.classList.remove('bx-x');
         navList.classList.remove('open');
         document.body.style.overflow = 'auto';
     });
@@ -24,7 +24,7 @@ document.querySelectorAll('.navlist a').forEach(link => {
 // Fechar menu ao rolar
 window.addEventListener('scroll', () => {
     if (navList.classList.contains('open')) {
-        menuIconn.classList.remove('bx-x');
+        menuIcon.classList.remove('bx-x');
         navList.classList.remove('open');
         document.body.style.overflow = 'auto';
     }
@@ -38,5 +38,24 @@ const navLinks = document.querySelectorAll('.navlist a');
 function activeLink() {
     navLinks.forEach(item => item.classList.remove('active')); //Remove a classe "active" de todos os links
     this.classList.add(item => item.addEventListener ('click', activeLink));
-    
+}
+
+// ========================= ALTERNAR MODO CLARO/ESCURO ====================
+// Função para alternar entre os temas claro e escuro
+function toggleMode() {
+    const html = document.documentElement;
+    html.classList.toggle('light'); // Alterna a classe "light" no elemento HTML 
+
+    // Salva o tema escolhido no localStorage 
+    const mode = html.classList.contains('light') ?'light' : 'dark';
+    localStorage.setItem('theme', mode);
+
+    // Atualiza a cor do texto do título
+    updateTextColor();
+}
+
+// Carrega o tema salvo no loalStorage ao carregar a página
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme) {
+    document.documentElement.classList.toggle('light', savedTheme === 'light');
 }
