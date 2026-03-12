@@ -13,16 +13,16 @@ Entretanto, algumas funcionalidades ainda não estão funcionando porque depende
 O menu mobile, links, formulário com API, animação do carrossel, modo escuro/claro e certas interações da página ainda não possuem comportamento dinâmico.
 
 ## Lista de tarefas 📝
-[] 1. Menu mobile
-[] 2. Navegação ativa
-[] 3. Modo escuro/claro
-[] 4. Animação do título
-[] 5. Animação da seção Home
-[] 6. Animação das seções
-[] 7. Botão de voltar ao topo
-[] 8. Carrossel de projetos
-[] 9. Formulário de contato
-[] 10. Atuação da seção "Sobre"
+[X] 1. Menu mobile
+[X] 2. Navegação ativa
+[X] 3. Modo escuro/claro
+[X] 4. Animação do título
+[X] 5. Animação da seção Home
+[X] 6. Animação das seções
+[X] 7. Botão de voltar ao topo
+[X] 8. Carrossel de projetos
+[X] 9. Formulário de contato
+[X] 10. Atuação da seção "Sobre"
 
 
 
